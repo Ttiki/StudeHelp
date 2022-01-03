@@ -2,7 +2,7 @@
 //  PromotionsMO+CoreDataProperties.swift
 //  StudeHelp
 //
-//  Created by Clement Combier on 01/12/2021.
+//  Created by L3NEC2021-7 on 03/01/2022.
 //
 //
 
@@ -18,7 +18,7 @@ extension PromotionsMO {
 
     @NSManaged public var dateFinPromo: Date?
     @NSManaged public var descriptionPromo: String?
-    @NSManaged public var montantPromo: Double
+    @NSManaged public var montantPromo: String?
     @NSManaged public var promoURL: String?
     @NSManaged public var titre: String?
     @NSManaged public var promoDeEntreprise: EntrepriseMO?

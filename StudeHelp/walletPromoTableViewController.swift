@@ -9,6 +9,7 @@ import UIKit
 
 class walletPromoTableViewController: UITableViewController {
 
+    private var usr : PersonneMO?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,6 +18,8 @@ class walletPromoTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        usr = PersonneMO.getUsr()[0]
     }
 
     // MARK: - Table view data source
@@ -34,16 +37,16 @@ class walletPromoTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80 //Ici, nos cellules font 80px de haut
     }
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "promotionsCell", for: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    */
-
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68B0698527837299000A5413 /* PromotionsMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B0698327837299000A5413 /* PromotionsMO+CoreDataClass.swift */; };
+		68B0698627837299000A5413 /* PromotionsMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B0698427837299000A5413 /* PromotionsMO+CoreDataProperties.swift */; };
 		F53BF255275788F1007A2A35 /* qrCodeViewControllerDetailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53BF254275788F1007A2A35 /* qrCodeViewControllerDetailed.swift */; };
 		F53BF25727578A84007A2A35 /* Cocogoose.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F53BF25627578A84007A2A35 /* Cocogoose.ttf */; };
 		F5BA54FF274B842B006168AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA54FE274B842B006168AB /* AppDelegate.swift */; };
@@ -18,8 +20,6 @@
 		F5BA550E274B8440006168AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BA550C274B8440006168AB /* LaunchScreen.storyboard */; };
 		F5EBBCA827578ECB0055B72C /* EntrepriseMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBBCA227578ECB0055B72C /* EntrepriseMO+CoreDataClass.swift */; };
 		F5EBBCA927578ECB0055B72C /* EntrepriseMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBBCA327578ECB0055B72C /* EntrepriseMO+CoreDataProperties.swift */; };
-		F5EBBCAA27578ECB0055B72C /* PromotionsMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBBCA427578ECB0055B72C /* PromotionsMO+CoreDataClass.swift */; };
-		F5EBBCAB27578ECB0055B72C /* PromotionsMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBBCA527578ECB0055B72C /* PromotionsMO+CoreDataProperties.swift */; };
 		F5EBBCAC27578ECB0055B72C /* PersonneMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBBCA627578ECB0055B72C /* PersonneMO+CoreDataClass.swift */; };
 		F5EBBCAD27578ECB0055B72C /* PersonneMO+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBBCA727578ECB0055B72C /* PersonneMO+CoreDataProperties.swift */; };
 		F5EBBCAF27578F920055B72C /* planViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EBBCAE27578F920055B72C /* planViewController.swift */; };
@@ -29,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68B0698327837299000A5413 /* PromotionsMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PromotionsMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		68B0698427837299000A5413 /* PromotionsMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PromotionsMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F53BF254275788F1007A2A35 /* qrCodeViewControllerDetailed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qrCodeViewControllerDetailed.swift; sourceTree = "<group>"; };
 		F53BF25627578A84007A2A35 /* Cocogoose.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Cocogoose.ttf; path = StudeHelp/fonts/Cocogoose.ttf; sourceTree = SOURCE_ROOT; };
 		F5BA54FB274B842B006168AB /* StudeHelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudeHelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,12 +42,10 @@
 		F5BA550A274B8440006168AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5BA550D274B8440006168AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5BA550F274B8440006168AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5EBBCA227578ECB0055B72C /* EntrepriseMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "EntrepriseMO+CoreDataClass.swift"; path = "StudeHelp/EntrepriseMO+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F5EBBCA327578ECB0055B72C /* EntrepriseMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "EntrepriseMO+CoreDataProperties.swift"; path = "StudeHelp/EntrepriseMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		F5EBBCA427578ECB0055B72C /* PromotionsMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PromotionsMO+CoreDataClass.swift"; path = "StudeHelp/PromotionsMO+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F5EBBCA527578ECB0055B72C /* PromotionsMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PromotionsMO+CoreDataProperties.swift"; path = "StudeHelp/PromotionsMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		F5EBBCA627578ECB0055B72C /* PersonneMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PersonneMO+CoreDataClass.swift"; path = "StudeHelp/PersonneMO+CoreDataClass.swift"; sourceTree = "<group>"; };
-		F5EBBCA727578ECB0055B72C /* PersonneMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PersonneMO+CoreDataProperties.swift"; path = "StudeHelp/PersonneMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5EBBCA227578ECB0055B72C /* EntrepriseMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntrepriseMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F5EBBCA327578ECB0055B72C /* EntrepriseMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntrepriseMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5EBBCA627578ECB0055B72C /* PersonneMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonneMO+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F5EBBCA727578ECB0055B72C /* PersonneMO+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonneMO+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F5EBBCAE27578F920055B72C /* planViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planViewController.swift; sourceTree = "<group>"; };
 		F5EBBCB1275794AE0055B72C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F5EBBCB3275794B60055B72C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -65,6 +65,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68B0698027836991000A5413 /* ClassMO */ = {
+			isa = PBXGroup;
+			children = (
+				68B06982278369B5000A5413 /* DataProperties */,
+				68B06981278369A0000A5413 /* DataClass */,
+			);
+			path = ClassMO;
+			sourceTree = "<group>";
+		};
+		68B06981278369A0000A5413 /* DataClass */ = {
+			isa = PBXGroup;
+			children = (
+				68B0698327837299000A5413 /* PromotionsMO+CoreDataClass.swift */,
+				F5EBBCA227578ECB0055B72C /* EntrepriseMO+CoreDataClass.swift */,
+				F5EBBCA627578ECB0055B72C /* PersonneMO+CoreDataClass.swift */,
+			);
+			path = DataClass;
+			sourceTree = "<group>";
+		};
+		68B06982278369B5000A5413 /* DataProperties */ = {
+			isa = PBXGroup;
+			children = (
+				68B0698427837299000A5413 /* PromotionsMO+CoreDataProperties.swift */,
+				F5EBBCA327578ECB0055B72C /* EntrepriseMO+CoreDataProperties.swift */,
+				F5EBBCA727578ECB0055B72C /* PersonneMO+CoreDataProperties.swift */,
+			);
+			path = DataProperties;
+			sourceTree = "<group>";
+		};
 		F53BF25827578A8B007A2A35 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,12 +105,6 @@
 		F5BA54F2274B842B006168AB = {
 			isa = PBXGroup;
 			children = (
-				F5EBBCA227578ECB0055B72C /* EntrepriseMO+CoreDataClass.swift */,
-				F5EBBCA327578ECB0055B72C /* EntrepriseMO+CoreDataProperties.swift */,
-				F5EBBCA427578ECB0055B72C /* PromotionsMO+CoreDataClass.swift */,
-				F5EBBCA527578ECB0055B72C /* PromotionsMO+CoreDataProperties.swift */,
-				F5EBBCA627578ECB0055B72C /* PersonneMO+CoreDataClass.swift */,
-				F5EBBCA727578ECB0055B72C /* PersonneMO+CoreDataProperties.swift */,
 				F5BA54FD274B842B006168AB /* StudeHelp */,
 				F5BA54FC274B842B006168AB /* Products */,
 				F5EBBCB0275794AE0055B72C /* Frameworks */,
@@ -99,6 +122,7 @@
 		F5BA54FD274B842B006168AB /* StudeHelp */ = {
 			isa = PBXGroup;
 			children = (
+				68B0698027836991000A5413 /* ClassMO */,
 				F53BF25827578A8B007A2A35 /* fonts */,
 				F5BA54FE274B842B006168AB /* AppDelegate.swift */,
 				F5BA5500274B842B006168AB /* SceneDelegate.swift */,
@@ -198,16 +222,16 @@
 			files = (
 				F5EBBCA827578ECB0055B72C /* EntrepriseMO+CoreDataClass.swift in Sources */,
 				F5EBBCAF27578F920055B72C /* planViewController.swift in Sources */,
+				68B0698527837299000A5413 /* PromotionsMO+CoreDataClass.swift in Sources */,
 				F5EBBCAC27578ECB0055B72C /* PersonneMO+CoreDataClass.swift in Sources */,
-				F5EBBCAB27578ECB0055B72C /* PromotionsMO+CoreDataProperties.swift in Sources */,
 				F5BA5509274B842B006168AB /* StudeHelp.xcdatamodeld in Sources */,
 				F5EBBCAD27578ECB0055B72C /* PersonneMO+CoreDataProperties.swift in Sources */,
 				F5EBBCB6275796B80055B72C /* walletPromoTableViewController.swift in Sources */,
-				F5EBBCAA27578ECB0055B72C /* PromotionsMO+CoreDataClass.swift in Sources */,
 				F53BF255275788F1007A2A35 /* qrCodeViewControllerDetailed.swift in Sources */,
 				F5EBBCA927578ECB0055B72C /* EntrepriseMO+CoreDataProperties.swift in Sources */,
 				F5BA5503274B842B006168AB /* ViewController.swift in Sources */,
 				F5BA54FF274B842B006168AB /* AppDelegate.swift in Sources */,
+				68B0698627837299000A5413 /* PromotionsMO+CoreDataProperties.swift in Sources */,
 				F5BA5501274B842B006168AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
