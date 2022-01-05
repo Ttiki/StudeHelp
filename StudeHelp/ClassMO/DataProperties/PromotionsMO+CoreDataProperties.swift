@@ -2,7 +2,7 @@
 //  PromotionsMO+CoreDataProperties.swift
 //  StudeHelp
 //
-//  Created by L3NEC2021-7 on 03/01/2022.
+//  Created by L3NEC2021-7 on 05/01/2022.
 //
 //
 

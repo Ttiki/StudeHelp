@@ -61,10 +61,16 @@ class ViewController: UIViewController {
         //PersonneMO.addToPromosDeUser(tabPromo[promoIndex])
         
         
+        
+    }
+    @IBAction func notLikeTapBtn(_ sender: Any) {
         promoIndex=promoIndex-1
         displayPromoAtIndex()
     }
-    @IBAction func notLikeTapBtn(_ sender: Any) {
+    
+    override func prepare(for segue:UIStoryboardSegue, sender: Any?){
+        let destinationVC = segue.destination as! addPromoVC
+        destinationVC.laPromo = tabPromo[promoIndex]
         promoIndex=promoIndex-1
         displayPromoAtIndex()
     }

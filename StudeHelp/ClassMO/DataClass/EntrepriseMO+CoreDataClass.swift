@@ -40,4 +40,6 @@ public class EntrepriseMO: NSManagedObject {
         
         return tabEntreprises
     }
+    
+    
 }

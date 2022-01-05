@@ -17,21 +17,25 @@ class walletPromoTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        // self.navigationItem.rightBarButtonIte+++m = self.editButtonItem
         
         usr = PersonneMO.getUsr()[0]
+        
+        print(PromotionsMO.getToutesLesPromotions())
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
+        
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return PromotionsMO.getToutesLesPromotions().count
+        
     }
     //Changer la hauteur d'une cellule pour l'adapter a nos besoins
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -39,11 +43,24 @@ class walletPromoTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "promotionsCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "promotionsCell", for: indexPath) as! PromoCell
 
-        // Configure the cell...
-
+        let promo = PromotionsMO.getToutesLesPromotions()[indexPath.row]
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        
+        
+        cell.nom_ent.text = promo.promoDeEntreprise?.nom
+        cell.adr_ent.text = promo.promoDeEntreprise?.adresse
+        cell.datefin_ent.text = dateFormatter.string(from: promo.dateFinPromo!)
+        cell.descr_promo.text = promo.titre! + " " + promo.montantPromo!
         return cell
+    }
+    
+    override func prepare(for segue:UIStoryboardSegue, sender: Any?){
+        let destinationVC = segue.destination as! qrCodeViewControllerDetailed
+        let selectedRow = tableView.indexPathForSelectedRow?.row
+        destinationVC.laPromo = PromotionsMO.getToutesLesPromotions()[selectedRow!]
     }
     
     

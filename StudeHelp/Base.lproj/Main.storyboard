@@ -21,12 +21,12 @@
                     <connections>
                         <segue destination="ssG-9y-I6x" kind="relationship" relationship="viewControllers" id="Rcr-sb-eO3"/>
                         <segue destination="c6X-9T-iRS" kind="relationship" relationship="viewControllers" id="itR-Cy-eVj"/>
-                        <segue destination="W28-Tc-3Hg" kind="relationship" relationship="viewControllers" id="kmL-iY-wAb"/>
+                        <segue destination="trI-mX-QX4" kind="relationship" relationship="viewControllers" id="J5a-08-dbp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQf-of-IqE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1958" y="-413"/>
+            <point key="canvasLocation" x="-1513" y="-413"/>
         </scene>
         <!--ProLocation-->
         <scene sceneID="res-w4-niM">
@@ -122,7 +122,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="addToLibraryTapBtn:" destination="ssG-9y-I6x" eventType="touchUpInside" id="pI9-Yl-7vd"/>
-                                    <segue destination="igD-9G-GrN" kind="show" id="sqG-25-xYq"/>
+                                    <segue destination="igD-9G-GrN" kind="show" identifier="enregistrerCode" id="sqG-25-xYq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOz-si-uhc">
@@ -163,11 +163,30 @@
             <point key="canvasLocation" x="-507" y="-413"/>
         </scene>
         <!--Mes promotions-->
+        <scene sceneID="VYq-LL-MX5">
+            <objects>
+                <navigationController id="trI-mX-QX4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Mes promotions" id="O6v-Cn-Vxw"/>
+                    <navigationItem key="navigationItem" id="PDz-K6-AX9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KKn-9l-T8l">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="W28-Tc-3Hg" kind="relationship" relationship="rootViewController" id="vLb-Ig-fIJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2p-xe-wMM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507" y="232"/>
+        </scene>
+        <!--Wallet Promo Table View Controller-->
         <scene sceneID="PXC-6L-Nm3">
             <objects>
                 <tableViewController id="W28-Tc-3Hg" customClass="walletPromoTableViewController" customModule="StudeHelp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="XXA-t5-ZFj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Banniere" id="fSN-NS-mc7">
@@ -175,7 +194,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="promotionsCell" rowHeight="80" id="wy3-Vg-4b4">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="promotionsCell" rowHeight="80" id="wy3-Vg-4b4" customClass="PromoCell" customModule="StudeHelp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="208.5" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wy3-Vg-4b4" id="xvK-Wt-beL">
@@ -183,21 +202,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NOM_ENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2K-8M-cdj">
-                                            <rect key="frame" x="20" y="11" width="95" height="24"/>
+                                            <rect key="frame" x="20" y="11" width="171" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ADR_ENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mym-O1-CgV">
-                                            <rect key="frame" x="123" y="11" width="88" height="24"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <color key="textColor" systemColor="secondaryLabelColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DATE_FIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bET-1F-Upt">
-                                            <rect key="frame" x="307" y="11" width="89" height="24"/>
+                                            <rect key="frame" x="325" y="11" width="89" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" systemColor="secondaryLabelColor"/>
@@ -210,8 +222,22 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ADR_ENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mym-O1-CgV">
+                                            <rect key="frame" x="199" y="11" width="118" height="24"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="adr_ent" destination="mym-O1-CgV" id="WCa-mz-NaR"/>
+                                    <outlet property="datefin_ent" destination="bET-1F-Upt" id="k8Y-hY-0P4"/>
+                                    <outlet property="descr_promo" destination="AX4-zx-XAz" id="233-nu-wXX"/>
+                                    <outlet property="nom_ent" destination="R2K-8M-cdj" id="RTS-L7-CF5"/>
+                                    <segue destination="Qkt-kA-yX9" kind="show" id="Vjo-hc-CV5"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -219,19 +245,18 @@
                             <outlet property="delegate" destination="W28-Tc-3Hg" id="zsq-BE-bQb"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Mes promotions" id="Sgi-wA-7eG"/>
                     <navigationItem key="navigationItem" id="oPP-Js-mCT"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UMf-kr-vIL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-507.24637681159425" y="318.75"/>
+            <point key="canvasLocation" x="415.94202898550731" y="231.69642857142856"/>
         </scene>
-        <!--Qr Code View Controller Detailed-->
+        <!--Add PromoVC-->
         <scene sceneID="JRj-WX-lzx">
             <objects>
-                <viewController id="igD-9G-GrN" customClass="qrCodeViewControllerDetailed" customModule="StudeHelp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="igD-9G-GrN" customClass="addPromoVC" customModule="StudeHelp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dEu-O7-oUK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -267,6 +292,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Enregistrer le code !">
                                     <fontDescription key="titleFontDescription" name="Cocogoose" family="Cocogoose" pointSize="18"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="enregistrerCodeTapBtn:" destination="igD-9G-GrN" eventType="touchUpInside" id="PI8-ry-o1w"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCZ-lN-4c2">
                                 <rect key="frame" x="70" y="725" width="274" height="34"/>
@@ -275,6 +303,9 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Ouvrir le carnet de promotions">
                                     <fontDescription key="titleFontDescription" name="Cocogoose" family="Cocogoose" pointSize="14"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="W28-Tc-3Hg" kind="show" id="036-gS-JCN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2cC-WM-n4w"/>
@@ -282,62 +313,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="vmm-0W-fFA"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="qrCodeImg" destination="sNo-jF-urL" id="EGw-Ze-ucd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wU1-X7-8k8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="416" y="-413"/>
-        </scene>
-        <!--Root View Controller-->
-        <scene sceneID="jDm-aS-pdi">
-            <objects>
-                <tableViewController id="lnR-yI-ThG" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="5aE-RS-IcS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lOo-rD-tOD">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lOo-rD-tOD" id="A3R-Ar-WAl">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="lnR-yI-ThG" id="rHm-3a-nx8"/>
-                            <outlet property="delegate" destination="lnR-yI-ThG" id="8FF-Vs-l3Q"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="rIv-BR-Cf0"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WlL-74-1w0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2101" y="-347"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="82d-mF-YPN">
-            <objects>
-                <navigationController id="rt9-YY-QZv" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AIT-gd-S4J">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="lnR-yI-ThG" kind="relationship" relationship="rootViewController" id="PSa-jG-oAZ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aCk-TQ-jCw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1214" y="-413"/>
         </scene>
         <!--Qr Code View Controller Detailed-->
         <scene sceneID="tA3-yK-At2">
             <objects>
                 <viewController id="Qkt-kA-yX9" customClass="qrCodeViewControllerDetailed" customModule="StudeHelp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cBV-UT-O7O">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Banniere" translatesAutoresizingMaskIntoConstraints="NO" id="dpA-oe-kSE">
@@ -380,7 +369,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valable juqu'au: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOE-uq-F1m">
-                                <rect key="frame" x="136" y="704" width="143" height="24"/>
+                                <rect key="frame" x="79" y="704" width="256" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" systemColor="secondaryLabelColor"/>
@@ -392,12 +381,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="fh6-2D-CTK"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="adr_ent" destination="hua-XU-rMR" id="iX5-7R-MnN"/>
+                        <outlet property="datefin_lab" destination="HOE-uq-F1m" id="ucN-F9-tCE"/>
+                        <outlet property="nom_ent" destination="pLJ-UR-mOH" id="AIv-yy-KQ2"/>
+                        <outlet property="promoQRCode" destination="1Yl-Xk-eXU" id="9mS-4o-zvE"/>
+                        <outlet property="promo_lab" destination="KgQ-3a-IQx" id="j7G-XQ-Vou"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIz-ki-X5I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="415.94202898550731" y="318.75"/>
+            <point key="canvasLocation" x="1186.9565217391305" y="231.69642857142856"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="036-gS-JCN"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Banniere" width="1242" height="449"/>
         <image name="Coeur" width="182" height="181"/>

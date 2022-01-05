@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //EntrepriseMO.peuplerEntreprises()
         //PromotionsMO.peuplerPromotions()
-        PersonneMO.peuplerUtilisateur()
+        //PersonneMO.peuplerUtilisateur()
         
         locationManager.requestWhenInUseAuthorization()
         return true
